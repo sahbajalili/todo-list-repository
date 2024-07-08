@@ -11,6 +11,7 @@ let todoList = access('.todo-list')
 todoInput.addEventListener('keydown' , addNewTodo)
 
 function addNewTodo(event) {
+    event.preventDefault()
     if (event.key == 'Enter') {
         if (todoInput.value == '') {
             todoInput.placeholder = 'Fill in the blank !'
