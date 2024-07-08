@@ -108,3 +108,9 @@ body {
 #todo-input:focus {
     border: 3px solid #314e9f;
 }
+
+@media screen and (max-width:520px) {
+    .container {
+        width: 70%;
+    }
+}
